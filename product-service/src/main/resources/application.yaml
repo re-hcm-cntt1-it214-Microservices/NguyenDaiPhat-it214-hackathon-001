@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 9001
 
 spring:
   application:
@@ -27,8 +27,6 @@ spring:
   sql:
     init:
       mode: ALWAYS
-
-ma
 
 eureka:
   instance:
