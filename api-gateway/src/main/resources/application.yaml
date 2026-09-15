@@ -3,15 +3,15 @@ spring:
     name: api-gateway
   main:
     web-application-type: REACTIVE
-#  cloud:
-#    gateway:
-#      server:
-#        webflux:
-#          routes:
-#            - id: category-routes
-#              url: lb://category-service
-#              predicates:
-#                - Path=/api/greeting/**
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: category-routes
+              uri: lb://category-service
+              predicates:
+                - Path=/api/category/**
 
 server:
   port: 8080
